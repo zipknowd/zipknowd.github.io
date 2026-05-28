@@ -1,12 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zipknowd</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zip Knowd — Know What's Happening in Your ZIP Code</title>
+  <meta name="description" content="The hyperlocal app that connects neighbors by ZIP code. Post and browse real-time updates, traffic, events, lost & found, and Happy Hour deals in your neighborhood.">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Welcome to Zipknowd.com!</h1>
-    <p>My GitHub hosted website is officially live.</p>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo-link">
+        <div class="logo-icon">Z</div>
+        Zip Knowd
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="business.html">For Business</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#download" class="nav-cta">Get the App</a>
+      <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg-blob one"></div>
+      <div class="hero-bg-blob two"></div>
+      <div class="hero-bg-blob three"></div>
+      <div class="container hero-inner">
+        <div>
+          <h1>Know your <span class="gradient-text">zip</span>.</h1>
+          <p>The hyperlocal app that connects neighbors by ZIP code. See what's happening in your neighborhood — from traffic snarls to the best Happy Hour.</p>
+          <div class="hero-badges">
+            <span class="badge">📍 Real-time map</span>
+            <span class="badge">🏘️ ZIP-only posts</span>
+            <span class="badge">🍷 Happy Hour</span>
+            <span class="badge">🔒 Phone verified</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#download" class="btn btn-primary">Get the App</a>
+            <a href="business.html" class="btn btn-secondary">I'm a Business</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="mock-post">
+                <div class="mock-header">
+                  <div class="mock-avatar"></div>
+                  <div>
+                    <div class="mock-name">LocalDad_09</div>
+                    <div class="mock-handle">zip 92109</div>
+                  </div>
+                </div>
+                <div class="mock-text">Helicopter search near Mission Bay. Police blocking off Voltaire St.</div>
+                <span class="mock-chip" style="background:#D0F5F0;color:#006B5E">News</span>
+              </div>
+              <div class="mock-post">
+                <div class="mock-header">
+                  <div class="mock-avatar"></div>
+                  <div>
+                    <div class="mock-name">SurfShopSarah</div>
+                    <div class="mock-handle">zip 92109</div>
+                  </div>
+                </div>
+                <div class="mock-text">Lost golden retriever near the dog beach. Wearing a blue bandana. 🐕</div>
+                <span class="mock-chip" style="background:#FFF0E6;color:#8B4513">Lost & Found</span>
+              </div>
+              <div class="mock-post">
+                <div class="mock-header">
+                  <div class="mock-avatar"></div>
+                  <div>
+                    <div class="mock-name">TheRustyAnchor</div>
+                    <div class="mock-handle">✅ Verified Business</div>
+                  </div>
+                </div>
+                <div class="mock-text">Happy Hour 4–7pm: $6 fish tacos, $5 drafts, and live acoustic starting at 6!</div>
+                <span class="mock-chip" style="background:#FCE7F3;color:#9D174D">Happy Hour</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="section section-alt" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Everything nearby, <span class="gradient-text">nothing extra</span></h2>
+          <p>No algorithms. No infinite scroll. Just your ZIP code, your neighbors, and what's happening right now.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon" style="background:var(--turquoise-soft)">📰</div>
+            <h3>Neighborhood Feed</h3>
+            <p>Browse and post real-time updates in your home ZIP. News, traffic, questions, events, and more.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" style="background:var(--blue-soft)">🗺️</div>
+            <h3>Live Map</h3>
+            <p>See posts pinned to a map. Drop your own pins with location context so others know exactly where to go — or avoid.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" style="background:var(--purple-soft)">🔍</div>
+            <h3>Browse Any ZIP</h3>
+            <p>Visiting a new city? Tap any ZIP in the country to see what's happening there before you even arrive.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" style="background:var(--coral-soft)">🔔</div>
+            <h3>Smart Alerts</h3>
+            <p>Get notified when someone replies, mentions you, or reposts your update. Customizable and respectful.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" style="background:#E0F2FE">🛡️</div>
+            <h3>Trust Tiers</h3>
+            <p>Members, Local GPS, Verified Local, and Admin badges help the community self-regulate and build real reputation.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" style="background:#F3E8FF">🍷</div>
+            <h3>Happy Hour</h3>
+            <p>Verified local businesses post specials and events directly to neighbors. Support the spots around the corner.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>How it works</h2>
+          <p>Three steps to knowing your zip.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <h3>Set your ZIP</h3>
+            <p>Sign up with your phone, verify your identity, and set your home ZIP via GPS or manual entry.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <h3>Post or browse</h3>
+            <p>Share what's happening in your neighborhood. Or browse any ZIP in the country to see what locals are saying.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <h3>Stay in the know</h3>
+            <p>Get real-time alerts for replies, mentions, and nearby posts. Never miss what's happening around you again.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section section-alt" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <h2>Post categories</h2>
+          <p>Whatever's happening, there's a category for it.</p>
+        </div>
+        <div class="category-grid">
+          <div class="category-chip"><span class="emoji">💬</span> General</div>
+          <div class="category-chip"><span class="emoji">📰</span> News</div>
+          <div class="category-chip"><span class="emoji">📅</span> Event</div>
+          <div class="category-chip"><span class="emoji">🚗</span> Traffic</div>
+          <div class="category-chip"><span class="emoji">🔍</span> Lost & Found</div>
+          <div class="category-chip"><span class="emoji">❓</span> Question</div>
+          <div class="category-chip"><span class="emoji">🏷️</span> For Sale</div>
+          <div class="category-chip"><span class="emoji">🍷</span> Happy Hour</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map preview -->
+    <section class="section">
+      <div class="container">
+        <div class="map-preview">
+          <div>
+            <h2 style="font-size:28px; font-weight:800; margin-bottom:12px">See it on the <span class="gradient-text">map</span></h2>
+            <p style="font-size:17px; color:var(--text-secondary); margin-bottom:24px">Posts aren't just text — they're places. Drop a pin to show exactly where something is happening, browse pins from other locals, and tap-to-discover any ZIP in the country.</p>
+            <ul style="list-style:none; display:flex; flex-direction:column; gap:12px">
+              <li style="display:flex; align-items:center; gap:10px; font-size:15px">
+                <span style="width:28px;height:28px;border-radius:50%;background:var(--turquoise-soft);display:grid;place-items:center;font-size:14px">📍</span>
+                Drop pins inside your neighborhood radius
+              </li>
+              <li style="display:flex; align-items:center; gap:10px; font-size:15px">
+                <span style="width:28px;height:28px;border-radius:50%;background:var(--blue-soft);display:grid;place-items:center;font-size:14px">🗺️</span>
+                Tap anywhere on the map to discover a new ZIP
+              </li>
+              <li style="display:flex; align-items:center; gap:10px; font-size:15px">
+                <span style="width:28px;height:28px;border-radius:50%;background:var(--purple-soft);display:grid;place-items:center;font-size:14px">⏱️</span>
+                Posts expire automatically so the map stays fresh
+              </li>
+            </ul>
+          </div>
+          <div class="map-visual">
+            <div class="map-pin" style="top:30%;left:40%"></div>
+            <div class="map-pin" style="top:55%;left:65%;background:var(--purple);animation-delay:0.2s"></div>
+            <div class="map-pin" style="top:70%;left:25%;background:var(--blue);animation-delay:0.4s"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business CTA -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="banner-cta">
+          <h2>Own a local business?</h2>
+          <p>Post Happy Hour specials, events, and deals directly to neighbors in your ZIP code. Get verified and start reaching locals today.</p>
+          <div class="hero-actions" style="justify-content:center">
+            <a href="business.html" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section class="section" id="download">
+      <div class="container" style="text-align:center">
+        <h2 style="font-size:clamp(30px,4vw,42px); font-weight:800; margin-bottom:14px">Get Zip Knowd</h2>
+        <p style="font-size:18px; color:var(--text-secondary); max-width:520px; margin:0 auto 28px">Available on iOS. Android coming soon. Join the neighborhood.</p>
+        <div class="hero-actions" style="justify-content:center">
+          <a href="#" class="btn btn-primary" onclick="alert('App Store link coming soon!')">Download on the App Store</a>
+          <a href="contact.html" class="btn btn-secondary">Join the Beta</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-link">
+            <div class="logo-icon">Z</div>
+            Zip Knowd
+          </a>
+          <p>The hyperlocal app that connects neighbors by ZIP code. Know what's happening — right where you live.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="business.html">For Business</a></li>
+            <li><a href="index.html#categories">Categories</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Zip Knowd. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

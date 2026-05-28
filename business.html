@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zip Knowd for Business — Verify & Start Posting</title>
+  <meta name="description" content="Reach locals in your ZIP code. Post Happy Hour specials, events, and deals directly to neighbors. Only verified businesses can post in the Happy Hour category.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo-link">
+        <div class="logo-icon">Z</div>
+        Zip Knowd
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="business.html" class="active">For Business</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="contact.html" class="nav-cta">Questions?</a>
+      <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="business-hero">
+      <div class="container">
+        <h1>Zip Knowd for <span class="gradient-text">Business</span></h1>
+        <p>Reach locals in your ZIP code. Post Happy Hour specials, events, and deals directly to the neighbors who matter most.</p>
+        <div class="hero-actions" style="justify-content:center; margin-top:24px">
+          <a href="#plans" class="btn btn-primary">See Plans</a>
+          <a href="contact.html" class="btn btn-secondary">Talk to Sales</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why verify -->
+    <section class="section" style="padding-top:0">
+      <div class="container" style="max-width:720px">
+        <div class="business-card">
+          <h2>Why verify your business?</h2>
+          <div class="hero-badges" style="margin-bottom:16px">
+            <span class="badge">🍷 Happy Hour posts</span>
+            <span class="badge">📍 Pin to your location</span>
+            <span class="badge">✅ Verified badge</span>
+          </div>
+          <p>Only verified businesses can post in the Happy Hour category. Your posts get a verified badge, show up on the neighborhood map, and reach people who are actually nearby — not bots or random followers.</p>
+        </div>
+
+        <div class="business-card" id="step1">
+          <h2>1. Tell us about your business</h2>
+          <input type="text" class="input" id="businessName" placeholder="Business name (e.g. The Rusty Anchor)" />
+          <input type="text" class="input" id="businessAddress" placeholder="Street address" />
+          <input type="text" class="input" id="zip" placeholder="ZIP code" maxlength="5" />
+        </div>
+
+        <div class="business-card" id="step2">
+          <h2>2. Choose a plan</h2>
+          <div class="tier-grid">
+            <div class="tier-card" data-tier="payPerPost">
+              <h3>Pay Per Post</h3>
+              <p class="tier-desc">1 post, 30-day visibility</p>
+              <div class="tier-price">$19</div>
+            </div>
+            <div class="tier-card" data-tier="monthly">
+              <div class="best-badge">Popular</div>
+              <h3>Monthly</h3>
+              <p class="tier-desc">6 posts per month</p>
+              <div class="tier-price">$49<span style="font-size:16px;color:var(--text-secondary)">/mo</span></div>
+            </div>
+            <div class="tier-card" data-tier="sixMonth">
+              <h3>6 Months</h3>
+              <p class="tier-desc">6 posts/month — Save 15%</p>
+              <div class="tier-price">$249</div>
+            </div>
+            <div class="tier-card" data-tier="annual">
+              <div class="best-badge">Best Value</div>
+              <h3>Annual</h3>
+              <p class="tier-desc">8 posts/month — Save 32%</p>
+              <div class="tier-price">$399</div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" id="checkoutBtn" style="width:100%; margin-bottom:20px" disabled>
+          Continue to Checkout
+        </button>
+
+        <div class="text-center" style="color:var(--text-tertiary); font-size:13px">
+          <p>Payments processed securely by <a href="https://stripe.com" target="_blank">Stripe</a>.</p>
+          <p style="margin-top:8px">Questions? Email <a href="mailto:hello@zipknowd.com">hello@zipknowd.com</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features for business -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Everything a local business needs</h2>
+          <p>Built specifically for bars, restaurants, cafés, gyms, and any business that serves a neighborhood.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon" style="background:var(--turquoise-soft)">🍷</div>
+            <h3>Happy Hour Posts</h3>
+            <p>Share daily specials, drink deals, and limited-time offers with everyone in your ZIP.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" style="background:var(--blue-soft)">📍</div>
+            <h3>Map Pinning</h3>
+            <p>Drop a pin so locals can see exactly where you are and what's happening right now.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" style="background:var(--purple-soft)">✅</div>
+            <h3>Verified Badge</h3>
+            <p>Stand out with a verified badge that builds trust and signals you're the real deal.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon" style="background:var(--coral-soft)">📸</div>
+            <h3>Photo Uploads</h3>
+            <p>Add photos of your specials, events, or new menu items to catch the eye.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-link">
+            <div class="logo-icon">Z</div>
+            Zip Knowd
+          </a>
+          <p>The hyperlocal app that connects neighbors by ZIP code. Know what's happening — right where you live.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="business.html">For Business</a></li>
+            <li><a href="index.html#categories">Categories</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Zip Knowd. All rights reserved.</span>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
