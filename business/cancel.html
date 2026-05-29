@@ -45,10 +45,13 @@
           <p class="result-text">No worries — you weren't charged. If you change your mind, you can restart the verification process anytime.</p>
 
           <div class="hero-actions" style="justify-content:center">
-            <a href="zipknowd://business/cancel" class="btn btn-primary">Return to App</a>
+            <button id="returnAppBtn" class="btn btn-primary">Return to App</button>
             <a href="../business.html" class="btn btn-secondary">Try Again</a>
           </div>
-          <p style="font-size:13px; color:var(--text-tertiary); margin-top:16px">If the app doesn't open automatically, close this window and return to Zip Knowd.</p>
+          <div id="fallbackMessage" style="display:none; margin-top:16px; padding:14px; background:#fffbeb; border-radius:10px; color:#b45309; text-align:center;">
+            <p style="margin:0; font-weight:600;">Tap the ✕ button above to close this window</p>
+            <p style="margin:4px 0 0 0; font-size:14px;">Then return to the Zip Knowd app to try again.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -86,5 +89,15 @@
   </footer>
 
   <script src="../js/main.js"></script>
+  <script>
+    document.getElementById('returnAppBtn').addEventListener('click', function(e) {
+      e.preventDefault();
+      window.location.href = 'zipknowd://business/cancel';
+      setTimeout(function() {
+        var fallback = document.getElementById('fallbackMessage');
+        if (fallback) fallback.style.display = 'block';
+      }, 300);
+    });
+  </script>
 </body>
 </html>
